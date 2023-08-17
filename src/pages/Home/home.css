@@ -1,0 +1,48 @@
+.home {
+  grid-template-columns: 4fr 7fr;
+  align-items: center;
+  background: linear-gradient(
+    70deg,
+    var(--first-color) 22%,
+    var(--white-color) 22%
+  );
+  height: 100vh;
+  padding: 5rem;
+}
+.home-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+}
+
+.home-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-title {
+  position: relative;
+  font-size: var(--h1);
+  padding-left: 60px;
+  line-height: 1.5;
+}
+
+.home-title::before {
+  content: "";
+  left: 0;
+  top: 24%;
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 1rem;
+  background-color: var(--first-color);
+}
+
+.home-title span {
+  color: var(--first-color);
+}
+
+.home-description {
+  margin-block: 1rem 1.5rem;
+}

@@ -1,0 +1,72 @@
+.change-theme {
+  position: fixed;
+  background-color: var(--body-color);
+  left: 0;
+  top: 15%;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 0 0 0.5rem 0;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: all 0.2s ease;
+}
+
+.show-theme {
+  transform: translateX(0);
+}
+.show-theme .change-theme-btn,
+.show-theme .change-light-btn {
+  left: -100%;
+}
+
+.change-theme-btn,
+.change-light-btn {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--body-color);
+  border-radius: 0 0.5rem 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--title-color);
+}
+
+.change-light-btn {
+  top: 38%;
+}
+
+.theme-title {
+  font-size: var(--small-font);
+  font-weight: 600;
+}
+
+.theme-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.theme-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.close-theme-btn {
+  font-size: var(--h3);
+  cursor: pointer;
+  color: var(--title-color);
+}
+.theme-color {
+  width: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,140 @@
+/* ===============  fonts ================ */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap");
+
+:root {
+  /* =========== colors ================ */
+  --first-color: hsl(271, 76%, 53%);
+  --title-color: hsl(0, 0%, 40%);
+  --text-color: hsl(0, 0%, 50%);
+  --body-color: hsl(0, 0%, 93%);
+  --white-color: hsl(0, 0%, 100%);
+
+  /* =========== fonts ================= */
+  --first-font: "Open Sans", sans-serif;
+  --second-font: "Poppins", sans-serif;
+
+  /* =========== font size ============= */
+  --big-font-size: 56px;
+  --h1: 50px;
+  --h2: 32px;
+  --h3: 24px;
+  --small-font: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --big-font-size: 36px;
+    --h1: 37px;
+    --h2: 24px;
+    --h3: 20px;
+    --small-font: 14px;
+  }
+}
+
+.dark-mod {
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 80%);
+  --body-color: hsl(0, 0%, 7%);
+  --white-color: hsl(0, 1%, 17%);
+}
+
+/* =============== base ====================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: var(--second-font);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =============== reusable classes ==============*/
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.section {
+  padding-block: 4rem;
+}
+
+.section-title {
+  font-size: var(--h1);
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--title-color);
+}
+.section-title span {
+  color: var(--first-color);
+}
+
+.section-subtitle {
+  font-weight: 600;
+  margin-bottom: 1.1rem;
+  font-size: var(--h3);
+  color: var(--title-color);
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--first-color);
+  border-radius: 3rem;
+  padding: 15px 70px 15px 35px;
+  color: var(--title-color);
+  transition: all 0.2s ease;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:hover {
+  color: var(--white-color);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: var(--first-color);
+  inset: 0;
+  z-index: -1;
+  transform: translateX(100%);
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover::before {
+  transform: translateX(0%);
+}
+
+.btn-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
