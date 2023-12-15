@@ -1,4 +1,4 @@
-import PortfolioItem from "../../componenets/portfolioItem";
+import PortfolioItem from "../../components/portfolioItem";
 import { portfolio } from "../../data.jsx";
 
 import "./portfolio.css";

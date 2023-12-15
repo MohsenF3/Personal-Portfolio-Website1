@@ -138,7 +138,7 @@ export const resume = [
     category: "experience",
     icon: <FaBriefcase />,
     year: "2018 - PRESENT",
-    title: "Web Developer <span> Envato </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
   },
 
@@ -147,7 +147,7 @@ export const resume = [
     category: "experience",
     icon: <FaBriefcase />,
     year: "2013 - 2018",
-    title: "UI/UX Designer <span> Themeforest </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
   },
 
@@ -156,7 +156,7 @@ export const resume = [
     category: "experience",
     icon: <FaBriefcase />,
     year: "2005 - 2013",
-    title: "Consultant <span> Videohive </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt",
   },
 
@@ -165,7 +165,7 @@ export const resume = [
     category: "education",
     icon: <FaGraduationCap />,
     year: "2015",
-    title: "Engineering Degree <span> Oxford University </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore",
   },
 
@@ -174,7 +174,7 @@ export const resume = [
     category: "education",
     icon: <FaGraduationCap />,
     year: "2012",
-    title: "Master Degree <span> KIEV University </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
   },
 
@@ -183,7 +183,7 @@ export const resume = [
     category: "education",
     icon: <FaGraduationCap />,
     year: "2009",
-    title: "Bachelor Degree <span> Tunis High School </span>",
+    title: "Lorem ipsum dolor sit amet. </span>",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore",
   },
 ];
@@ -211,9 +211,14 @@ export const skills = [
     title: "Bootstrap",
     percentage: "60",
   },
-
   {
     id: 5,
+    title: "Tailwind",
+    percentage: "80",
+  },
+
+  {
+    id: 6,
     title: "React",
     percentage: "65",
   },

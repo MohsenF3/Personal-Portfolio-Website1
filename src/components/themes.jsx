@@ -1,6 +1,6 @@
 import { FaCog, FaSun, FaMoon } from "react-icons/fa";
 
-import ThemeItem from "./themeItem";
+import ThemeItem from "./themeItem.jsx";
 
 import { themes } from "../data.jsx";
 

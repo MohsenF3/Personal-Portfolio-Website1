@@ -1,7 +1,7 @@
-import States from "../../componenets/States";
-import Info from "../../componenets/info";
-import Skills from "../../componenets/skills.jsx";
-import ResumeItem from "../../componenets/resumeItem";
+import States from "../../components/States";
+import Info from "../../components/info";
+import Skills from "../../components/skills.jsx";
+import ResumeItem from "../../components/resumeItem";
 import { resume } from "../../data";
 
 import { FaDownload } from "react-icons/fa";
