@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -10,7 +10,7 @@ import Contact from "./pages/contact/contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Themes />
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
